@@ -1,38 +1,117 @@
-.App {
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    background: linear-gradient(270deg, #0b0a03, #f9c00c, #ad1bc4);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box {
+  box-shadow: 3px -1px 6px cornflowerblue;
+  min-height: 20rem;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+span{
+  color: red;
+  font-weight: 900;
+}
+
+h1 {
+  margin-left: 20px;
   text-align: center;
+
+}
+h2{
+  text-align: center;
+  color:whitesmoke ;
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+  color: whitesmoke;
 }
+.texts {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  font-size: 49px;
+  color: #14d9a8;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(2,199,150),
+               1px 1px 0 rgb(-17,180,131),
+               2px 2px 0 rgb(-35,162,113),
+               3px 3px 0 rgb(-53,144,95),
+               4px 4px 0 rgb(-72,125,76),
+               5px 5px 0 rgb(-90,107,58),
+               6px 6px 0 rgb(-108,89,40),
+               7px 7px 0 rgb(-127,70,21),
+               8px 8px 0 rgb(-145,52,3),
+               9px 9px 0 rgb(-163,34,0),
+               10px 10px 0 rgb(-182,15,0),
+               11px 11px 0 rgb(-200,-3,0),
+               12px 12px  0 rgb(-218,-21,0),
+               13px 13px 12px rgba(199,16,46,0.53),
+               13px 13px 1px rgba(199,16,46,0.5),
+               0px 0px 12px rgba(199,16,46,.2);
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+ @media screen and (max-width:768px) {
+   .container{
+     width: 100% !important;
+     display: block;
+     margin: auto;
+   }
+   .texts
+   {
+      color:gold;
+      font-size: 40px;
+   }
+   
+ }
